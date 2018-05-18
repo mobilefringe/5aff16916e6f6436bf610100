@@ -24,7 +24,9 @@
             <div class="row  hidden_phone landing_page_btn" style="padding-bottom: 30px;"></div>
         </div>
         <div class="demo_view">
-            <div class="tablet_view"></div>
+            <div class="tablet_view">
+                <div class="circle"></div>
+            </div>
         </div>
     </div>
 </section>
