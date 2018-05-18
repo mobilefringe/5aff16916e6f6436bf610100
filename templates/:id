@@ -433,7 +433,7 @@
     </section>
 </section>
 <style>
-    .template-preview .demo-device-chrome-tablet {
+    .tablet_view {
         border-radius: 30px;
         width: 1250px;
     }
