@@ -438,7 +438,7 @@
         width: 1250px;
     }
     
-    .template-preview .demo-device-chrome {
+    .demo-view {
         -webkit-transform: translateX(-50%);
         transform: translateX(-50%);
         left: 50%;
