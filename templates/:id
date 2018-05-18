@@ -470,6 +470,7 @@
     $(document).ready(function(e) {
         init(e);
         templateInit();
+        $( "#result" ).load( "ajax/test.html" );
         var prev_width = 0;
         $(window).on('resize', function(){
             if(prev_width !== $(document).width() ) {
