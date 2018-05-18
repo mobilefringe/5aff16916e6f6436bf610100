@@ -1,0 +1,847 @@
+<section class="template_dets_banner">
+    <div class = "inside_container" id="design_header_container">
+        <script id="design_header_template">
+            <h2 class="text-center inside_main_header col-md-12 col-sm-12 col-xs-12" id="mm_post_title">{{title}}</h2>
+            <p class="text-center banner_text  col-md-12 col-sm-12 col-xs-12" id="mm_post_author">{{author}}</p>
+        </script>
+    </div>
+</section>
+
+<section class="hidden_now" id="popup_copy" style="position:absolute;">
+    <div class="popup_padding">
+        Here is the link to share:
+        <input type="text" class="form-control" id="sharable_link">
+        <div class="success_copy_text"><br/></div>
+        <a  role="button" id="copy_share_link" class="template_btn"> Copy Link</a>
+        <i class="fa fa-remove close_popup" style="color:#000;"></i>
+    </div>
+</section>
+<section class="template_details">
+    <div class="inside_container">
+        <div class="row" id="newsletter">
+            <main class="col-md-8">
+                <div class="row_title"> <h3> Desktop Pages</h3></div>
+                <div class="monitor_container">
+                    <div id="newsletter_container" style="text-align: center">            
+                        <script id="newsletter_template" type="x-tmpl-mustache/text">
+                            <img src="{{photo_url_abs}}" alt=""/>
+                        </script>
+                    </div>
+                
+                </div>
+            </main>
+            <aside class="col-md-4 ">
+                <div class="row_title"><h3> Mobile Pages</h3></div>
+                <div class="phone_container">
+                    <div id="newsletter_m_container" style="text-align: center">            
+                        <script id="newsletter_m_template" type="x-tmpl-mustache/text">
+                            <img src="{{photo_url_abs}}" alt=""/>
+                        </script>                
+                    </div>
+                </div>
+            </aside>
+            
+        </div>
+        <div class="row" id="templates">
+            <main class="col-md-8 hidden-sm hidden-xs">
+                <div class="row_title"> <h3> Desktop Pages</h3></div>
+                <div class="monitor_container">
+                    <img src="//codecloud.cdn.speedyrails.net/sites/568d5ba06e6f6402d6000000/image/png/1492091255000/MacScreen.png" class="monitor" alt=""> 
+                    <!--<ul class="flex-direction-nav"><li class="flex-nav-prev"><a class="flex-prev" href="#"></a></li><li class="flex-nav-next"><a class="flex-next" href="#"></a></li></ul>-->
+                    <div class="flexslider_container">
+                        <div class="flexslider flexslider_view desktop_screen">
+                            
+                            <ul class="slides" id="desktop_container">            
+                                <script id="desktop_template" type="x-tmpl-mustache/text">
+                                    <li>
+                                        <img src="{{photo_url_abs}}" alt=""/>
+                                    </li>
+                                </script>                
+                            </ul> 
+                        </div>
+                    </div>
+                <p style="text-align:center; margin-top:210px"> Scroll to explore the page  <i class="fa fa-arrows" aria-hidden="true"></i></p>
+                </div>
+            </main>
+            <aside class="col-md-4 hidden-sm hidden-xs">
+                 <div class="row_title"><h3> Mobile Pages</h3></div>
+                <div class="phone_container">
+                    <img src="//codecloud.cdn.speedyrails.net/sites/568d5ba06e6f6402d6000000/image/png/1492091331000/iphoneScreen.png" class="phone" alt=""> 
+                    <div class="flexslider_container">
+                        <div class="flexslider flexslider_view mobile_screen">
+                            <ul class="slides" id="mobile_container">            
+                                <script id="mobile_template" type="x-tmpl-mustache/text">
+                                    <li>
+                                        <img src="{{photo_url_abs}}" alt=""/>
+                                    </li>
+                                </script>                
+                            </ul>        
+                        </div>
+                    </div>
+                </div>
+            </aside>
+            <div class="row  hidden_phone landing_page_btn" style="padding-bottom: 30px;"></div>
+        </div>
+        <!--<div class="row text-center template_padding_like">-->
+        <!--    Share This Page <br/>-->
+        <!--   <a  role="button" id="share_link"> <img src="//codecloud.cdn.speedyrails.net/sites/568d5ba06e6f6402d6000000/image/png/1497298411000/Shape Hover Over.png" class="" alt=""></a>-->
+        <!--</div>-->
+    </div>
+</section>
+<section id="template_request_section">
+    <div class="inside_container">
+        <hr class="grey_line"/>
+        <div class="default_sitemap hidden_phone">
+            <h3>Default Website Sitemap: </h3>
+            <ul>
+                <li>Front Page</li>
+                <li>Stores Directory</li>
+                <li>Stores Details</li>
+            </ul>
+            <ul>
+                <li>Promotions</li>
+                <li>Promotions Details</li>
+                <li>Events</li>
+                </ul>
+            <ul>
+                <li>Events Details</li>
+                <li>Jobs Postings</li>
+                <li>Maps</li>
+            </ul>
+            <ul>
+                <li>Hours</li>
+                <li>Contact Us</li>
+                <li>Create Pages</li>
+            </ul>
+        </div>
+        <div class="default_sitemap show_phone">
+            <h3>Default Website Sitemap: </h3>
+            <div class="col-xs-6">
+            <ul>
+                <li>Front Page</li>
+                <li>Stores Directory</li>
+                <li>Stores Details</li>
+            </ul>
+            <ul>
+                <li>Promotions</li>
+                <li>Promotions Details</li>
+                <li>Events</li>
+            </ul>
+            </div>
+            <div class="col-xs-6">
+            <ul>
+                <li>Events Details</li>
+                <li>Jobs Postings</li>
+                <li>Maps</li>
+            </ul>
+            <ul>
+                <li>Hours</li>
+                <li>Contact Us</li>
+                <li>Create Pages</li>
+            </ul>
+            </div>
+        </div>
+    </div>
+    <div class="select_features" id="select_features">
+        <div class="grey_container">
+            <h2>Select Your Features</h2>
+            <img src="//codecloud.cdn.speedyrails.net/sites/5aff16916e6f6436bf610100/image/png/1505229567000/down_arrow_1x.png" class="" alt="">
+        </div>
+    </div>
+    <div class="feature_listing inside_container toggle_class">
+        <div class="col-md-3 col-sm-12 col-xs-12">
+            <div class="feature">
+                <p>Mall Maverick Plus</p>
+                <div class="squaredOne"> 
+                  <input type="checkbox" value="Mall Maverick Plus" id="feature1" name="check" />
+                  <label for="feature1"></label>
+                </div>
+            </div>
+            <div class="feature">
+                <p>Web Design</p>
+                <div class="squaredOne"> 
+                  <input type="checkbox" value="Web Design" id="feature2" name="check" />
+                  <label for="feature2"></label>
+                </div>
+            </div>
+            <div class="feature">
+                <p>Directory Boards</p>
+                <div class="squaredOne"> 
+                  <input type="checkbox" value="Directory Boards" id="feature3" name="check" />
+                  <label for="feature3"></label>
+                </div>
+            </div>
+            <div class="feature">
+                <p>Contests</p>
+                <div class="squaredOne"> 
+                  <input type="checkbox" value="Contests" id="feature4" name="check" />
+                  <label for="feature4"></label>
+                </div>
+            </div>
+            <div class="feature">
+                <p>Social Sharing</p>
+                <div class="squaredOne"> 
+                  <input type="checkbox" value="Social Sharing" id="feature5" name="check" />
+                  <label for="feature5"></label>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 col-sm-12 col-xs-12">
+            <div class="feature">
+                <p>User Management</p>
+                <div class="squaredOne"> 
+                  <input type="checkbox" value="User Management" id="feature6" name="check" />
+                  <label for="feature6"></label>
+                </div>
+            </div>
+            <div class="feature">
+                <p>Retail Maverick</p>
+                <div class="squaredOne"> 
+                  <input type="checkbox" value="Retail Maverick" id="feature7" name="check" />
+                  <label for="feature7"></label>
+                </div>
+            </div>
+            <div class="feature">
+                <p>Retail News</p>
+                <div class="squaredOne"> 
+                  <input type="checkbox" value="Retail News" id="feature8" name="check" />
+                  <label for="feature8"></label>
+                </div>
+            </div>
+            <div class="feature">
+                <p>Push Notifications</p>
+                <div class="squaredOne"> 
+                  <input type="checkbox" value="Push Notifications" id="feature9" name="check" />
+                  <label for="feature9"></label>
+                </div>
+            </div>
+            <div class="feature">
+                <p>SVG Map</p>
+                <div class="squaredOne"> 
+                  <input type="checkbox" value="SVG Map" id="feature10" name="check" />
+                  <label for="feature10"></label>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 col-sm-12 col-xs-12">
+            <div class="feature">
+                <p>Pop-ups</p>
+                <div class="squaredOne"> 
+                  <input type="checkbox" value="Pop-ups" id="feature11" name="check" />
+                  <label for="feature11"></label>
+                </div>
+            </div>
+            <div class="feature">
+                <p>Newsletter</p>
+                <div class="squaredOne"> 
+                  <input type="checkbox" value="Newsletter" id="feature12" name="check" />
+                  <label for="feature12"></label>
+                </div>
+            </div>
+            <div class="feature">
+                <p>Blog</p>
+                <div class="squaredOne"> 
+                  <input type="checkbox" value="Blog" id="feature13" name="check" />
+                  <label for="feature13"></label>
+                </div>
+            </div>
+            <div class="feature">
+                <p>Gallery</p>
+                <div class="squaredOne"> 
+                  <input type="checkbox" value="Gallery" id="feature14" name="check" />
+                  <label for="feature14"></label>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 col-sm-12 col-xs-12">
+            <div class="feature">
+                <p>Loyalty Programs</p>
+                <div class="squaredOne"> 
+                  <input type="checkbox" value="Loyalty Programs" id="feature15" name="check" />
+                  <label for="feature15"></label>
+                </div>
+            </div>
+            <div class="feature">
+                <p>Chat Manager</p>
+                <div class="squaredOne"> 
+                  <input type="checkbox" value="Chat Manager" id="feature16" name="check" />
+                  <label for="feature16"></label>
+                </div>
+            </div>
+            <div class="feature">
+                <p>Featured Promos</p>
+                <div class="squaredOne"> 
+                  <input type="checkbox" value="Featured Promos" id="feature17" name="check" />
+                  <label for="feature17"></label>
+                </div>
+            </div>
+            <div class="feature">
+                <p>Promotion Slider</p>
+                <div class="squaredOne"> 
+                  <input type="checkbox" value="Promotion Slider" id="feature18" name="check" />
+                  <label for="feature18"></label>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- two column -->
+        <div class="feature_listing inside_container hidden_now feature_listing_2_col">
+        <div class="col-md-6 col-sm-6 col-xs-12 " style="text-align: center;">
+            <div class="feature">
+                <p>Mall Maverick Plus</p>
+                <div class="squaredOne"> 
+                  <input type="checkbox" value="Mall Maverick Plus" id="feature1" name="check" />
+                  <label for="feature1"></label>
+                </div>
+            </div>
+            <div class="feature">
+                <p>Web Design</p>
+                <div class="squaredOne"> 
+                  <input type="checkbox" value="Web Design" id="feature2" name="check" />
+                  <label for="feature2"></label>
+                </div>
+            </div>
+            <div class="feature">
+                <p>Directory Boards</p>
+                <div class="squaredOne"> 
+                  <input type="checkbox" value="Directory Boards" id="feature3" name="check" />
+                  <label for="feature3"></label>
+                </div>
+            </div>
+            <div class="feature">
+                <p>Contests</p>
+                <div class="squaredOne"> 
+                  <input type="checkbox" value="Contests" id="feature4" name="check" />
+                  <label for="feature4"></label>
+                </div>
+            </div>
+            <div class="feature">
+                <p>Social Sharing</p>
+                <div class="squaredOne"> 
+                  <input type="checkbox" value="Social Sharing" id="feature5" name="check" />
+                  <label for="feature5"></label>
+                </div>
+            </div>
+    
+            <div class="feature">
+                <p>User Management</p>
+                <div class="squaredOne"> 
+                  <input type="checkbox" value="User Management" id="feature6" name="check" />
+                  <label for="feature6"></label>
+                </div>
+            </div>
+            <div class="feature">
+                <p>Retail Maverick</p>
+                <div class="squaredOne"> 
+                  <input type="checkbox" value="Retail Maverick" id="feature7" name="check" />
+                  <label for="feature7"></label>
+                </div>
+            </div>
+            <div class="feature">
+                <p>Retail News</p>
+                <div class="squaredOne"> 
+                  <input type="checkbox" value="Retail News" id="feature8" name="check" />
+                  <label for="feature8"></label>
+                </div>
+            </div>
+            <div class="feature">
+                <p>Push Notifications</p>
+                <div class="squaredOne"> 
+                  <input type="checkbox" value="Push Notifications" id="feature9" name="check" />
+                  <label for="feature9"></label>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 col-sm-6 col-xs-12" style="text-align: center;">
+            <div class="feature">
+                <p>SVG Map</p>
+                <div class="squaredOne"> 
+                  <input type="checkbox" value="SVG Map" id="feature10" name="check" />
+                  <label for="feature10"></label>
+                </div>
+            </div>
+            <div class="feature">
+                <p>Pop-ups</p>
+                <div class="squaredOne"> 
+                  <input type="checkbox" value="Pop-ups" id="feature11" name="check" />
+                  <label for="feature11"></label>
+                </div>
+            </div>
+            <div class="feature">
+                <p>Newsletter</p>
+                <div class="squaredOne"> 
+                  <input type="checkbox" value="Newsletter" id="feature12" name="check" />
+                  <label for="feature12"></label>
+                </div>
+            </div>
+            <div class="feature">
+                <p>Blog</p>
+                <div class="squaredOne"> 
+                  <input type="checkbox" value="Blog" id="feature13" name="check" />
+                  <label for="feature13"></label>
+                </div>
+            </div>
+            <div class="feature">
+                <p>Gallery</p>
+                <div class="squaredOne"> 
+                  <input type="checkbox" value="Gallery" id="feature14" name="check" />
+                  <label for="feature14"></label>
+                </div>
+            </div>
+            <div class="feature">
+                <p>Loyalty Programs</p>
+                <div class="squaredOne"> 
+                  <input type="checkbox" value="Loyalty Programs" id="feature15" name="check" />
+                  <label for="feature15"></label>
+                </div>
+            </div>
+            <div class="feature">
+                <p>Chat Manager</p>
+                <div class="squaredOne"> 
+                  <input type="checkbox" value="Chat Manager" id="feature16" name="check" />
+                  <label for="feature16"></label>
+                </div>
+            </div>
+            <div class="feature">
+                <p>Featured Promos</p>
+                <div class="squaredOne"> 
+                  <input type="checkbox" value="Featured Promos" id="feature17" name="check" />
+                  <label for="feature17"></label>
+                </div>
+            </div>
+            <div class="feature">
+                <p>Promotion Slider</p>
+                <div class="squaredOne"> 
+                  <input type="checkbox" value="Promotion Slider" id="feature18" name="check" />
+                  <label for="feature18"></label>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="send_request inside_container">
+        <p>
+            Send your design request and selected features to our sales team:
+        </p>
+        <form name="template_request_form" id="template_request_form">
+            <div class="row">
+            <div class="col-md-3 col-sm-12 col-xs-12 ">
+                <input name="client_name" id="client_name" class="form-control" type="text" value="" required placeholder="Your Name">
+            </div>
+            <div class="col-md-3 col-sm-12 col-xs-12">
+                <input name="client_centre" id="client_centre" class="form-control" type="text" value="" required placeholder="Centre Name">
+            </div>
+            <div class="col-md-3 col-sm-12 col-xs-12">
+                <input name="client_email" id="client_email" class="form-control" type="email" value="" required placeholder="Your Email">
+            </div>
+            <div class="col-md-3 col-sm-12 col-xs-12">
+                <input name="client_email" id="client_phone" class="form-control" type="tel" value="" required placeholder="Your Phone Number">
+            </div>
+            </div>
+            <div class="row confirm_emails">
+                <input type="checkbox" value="c" id="send_confirm_email" name="check" />
+                <label for="send_confirm_email">I agree to recieve an email confirmation. </label>
+                 (Please note there is a limit of one request per email) 
+            </div>
+            <div class="row">
+                <button id="submit_request" class="send_btn button--ujarak" type="">Send Request</button>
+            </div>
+            
+        </form>
+        <div id="send_request_success" class="alert alert-success" role="alert" style="display:none">
+            <span class="glyphicon glyphicon-ok" aria-hidden="true"></span>
+            <span class="sr-only">Success</span>
+            Thank you for sending your request. A member from our team will contact you shortly. 
+        </div>
+        <div id="send_request_error" class="alert alert-danger" role="alert" style="display:none">
+            <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
+            <span class="sr-only">Error:</span>
+                There was an error when trying to submit your request. Please ensure you have entered a valid email address and subject and please try again.
+        </div>
+    </div>
+</section>
+
+<section id="might_like" class="template_padding_like">
+    <div class="inside_container" style="background : #F9F9F9;">
+        <div class="flexslider flexslider_like" style="background : #F9F9F9;border: 4px solid #F9F9F9;">
+            <h4 class="text-center"> OTHER PAGES YOU MIGHT LIKE</h4>
+            <ul class="slides" id="like_container">            
+                <script id="like_template" type="x-tmpl-mustache/text">
+                    <li class="template_design">
+                        <div class="template_padding_like">
+                            <img src="//codecloud.cdn.speedyrails.net/sites/568d5ba06e6f6402d6000000/image/png/1497284935000/New_Template_Icon.png" class="new_template " alt="" style="{{is_new}}">
+                            <a href="/templates/{{slug}}">
+                                <img src="{{image_url}}" alt="Design Template"/>
+                               <h3>{{title}}</h3>
+                            </a>
+                        </div>
+                    </li>
+                </script>                
+            </ul>
+        </div>
+    </div>
+    <!-- Back to Design section -->
+    <section>
+        <div class="inside_container template_padding_like" style="text-align:center; margin: 20px auto 20px;" id="backTO_body_container">
+            <script id="backTO_body_template" type="x-tmpl-mustache/text">
+                <!--<h3>Mall Maverick Provides... </h3>-->
+                <a class="template_btn " href="/templates#{{author}}">
+                    <label> Back to Designs </label>
+                </a>
+            </script>
+        </div>
+    </section>
+</section>
+
+<script>
+    var images = [];
+    var sorted_images=[];
+    var repo = [];
+    var sorted_repo=[];
+    $(window).load(function(){
+        $('.flexslider_like').flexslider({
+            animation: "slide",
+            animationLoop: false,
+            itemWidth: 210,
+            itemMargin: 5,
+            minItems: 1,
+            maxItems: 3
+        });
+        $('.flexslider_view').flexslider({
+            animation: "slide",
+            pauseOnHover: true,
+            slideshow: false,
+            smoothHeight: true,
+            prevText: "",
+            nextText: ""
+        }); 
+        console.log("images", images.length , "repo", repo.length)
+        if(images != null && images!= undefined && images.length == 1){
+            console.log("hello",$(".flexslider.desktop_screen .flex-direction-nav"));
+            $(".flexslider.desktop_screen .flex-direction-nav").hide();
+        }
+        if(repo != null && repo!= undefined && repo.length == 1){
+            console.log("hello2",$(".flexslider.mobile_screen "));
+            $(".flexslider.mobile_screen .flex-direction-nav").hide();
+        }
+        window.dispatchEvent(new Event('resize'));
+        setTimeout(function() {
+                show_content();
+            }, 500);
+    });
+     
+    $(document).ready(function(e) {
+        init(e);
+        templateInit();
+        var prev_width = 0;
+        $(window).on('resize', function(){
+            if(prev_width !== $(document).width() ) {
+                change_view_on_resize();
+            }
+            
+        });
+        change_view_on_resize();
+        
+        $("#select_features").click(function () {
+            $(".feature_listing.toggle_class").toggle();
+            $(".send_request").toggle();
+            console.log("toggleD!");
+        });
+        
+        var post_title = "";
+        function renderAll(){
+            var pathArray = window.location.pathname.split( '/' );
+            var slug = pathArray[pathArray.length-1];
+            var post_details = getPublishedPostDetailsBySlug(slug);
+            renderGeneral('#design_header_container','#design_header_template', post_details);
+            renderGeneral('#design_body_container','#design_body_template', post_details);
+            var author_initial = post_details[0].author ;
+            post_details[0].author = post_details[0].author.toLowerCase().replace(/ /g,"_");;
+            //console.log(post_details[0].author);
+            renderGeneral('#backTO_body_container','#backTO_body_template', post_details);
+            post_details[0].author = author_initial ;
+            post_title = post_details[0].title;
+            var gallery_slug = "home-" + slug;
+            // console.log(slug);
+            // console.log(post_details);
+            
+            try {
+                images = getFashionBySlug(gallery_slug).fashion_images;
+                
+                //find the first image for client mobile view
+                var first_id = Math.min.apply(null, images.map(function(a){return a.id;}));
+                // console.log(first_id);
+                $.each( images , function( key, val ) {
+                    val.type=post_details[0].author;
+                    if(val.type == "Newsletter") {
+                        val.show_news ="display:block";
+                        
+                        $("#template_request_section").hide();
+                    }
+                    else {
+                        val.show_news ="display:none";
+                    }
+                    if(val.type == "Landing Page"){
+                        $(".hidden_phone.landing_page_btn").html('<div class="col-md-8 align_center"> <a target="_blank" href="//projects.invisionapp.com/share/YQE6CRT34#/screens/260767304_Black_Friday_Landing_Page"><img src="//codecloud.cdn.speedyrails.net/sites/5aff16916e6f6436bf610100/image/png/1509138805000/desktopview.png" class="" alt=""></a></div><div class="col-md-4 align_center"> <a target="_blank" href="//projects.invisionapp.com/share/GDE6H6A7P#/screens/260770433_Black_Friday_Mobile_Landing_Page"><img src="//codecloud.cdn.speedyrails.net/sites/5aff16916e6f6436bf610100/image/png/1509138807000/mobileview.png" class="" alt=""></a></div>');
+                         $(".show_phone.landing_page_btn1").html('<div class="col-sm-12 col-xs-12 align_center" style="margin-top: 30px;"> <a target="_blank" href="//projects.invisionapp.com/share/YQE6CRT34#/screens/260767304_Black_Friday_Landing_Page"><img src="//codecloud.cdn.speedyrails.net/sites/5aff16916e6f6436bf610100/image/png/1509138805000/desktopview.png" class="" alt=""></a></div>');
+                         $(".show_phone.landing_page_btn2").html('<div class="col-sm-12 col-xs-12 align_center"> <a target="_blank" href="//projects.invisionapp.com/share/GDE6H6A7P#/screens/260770433_Black_Friday_Mobile_Landing_Page"><img src="//codecloud.cdn.speedyrails.net/sites/5aff16916e6f6436bf610100/image/png/1509138807000/mobileview.png" class="" alt=""></a></div>');
+                    }
+                    // console.log(val.photo_url);
+                    
+                    
+                    if(val.id == first_id) {
+                        // console.log(val.id);
+                        val.image_url="https://www.mallmaverick.com" + val.photo_url;
+                        sorted_images.push(val);
+                    }
+                    val.photo_url_abs="https://www.mallmaverick.com" + val.photo_url;
+                });
+                
+            }
+            catch(err) {
+                console.log(err);
+                var temp = {};
+                temp.type=post_details[0].author;
+                if(temp.type == "Newsletter") {
+                    temp.show_news ="display:block";
+                    $("#newsletter").show();
+                    $("#templates").hide();
+                    $("#template_request_section").hide();
+                    $("#newsletter main").hide();
+                    $("#newsletter aside").css({"margin":"auto')", "float-size": "none"});
+                }
+                else {
+                    temp.show_news ="display:none";
+                    $("#newsletter").hide();
+                    $("#templates").show();
+                    $("#template_request_section").show();
+                }
+                temp.photo_url = "//codecloud.cdn.speedyrails.net/sites/5aff16916e6f6436bf610100/image/png/1502205049000/Group 24.png";
+                temp.image_url = "//codecloud.cdn.speedyrails.net/sites/5aff16916e6f6436bf610100/image/png/1502205049000/Group 24.png";
+                images.push(temp);
+                
+            }
+            try {
+                
+                repo = getRepoDetailsByName(slug).images;
+                
+                //find the first image for client mobile view
+                var first_id = Math.min.apply(null, repo.map(function(a){return a.id;}));
+                // console.log(first_id);
+                $.each( repo , function( key, val ) {
+                    val.type=post_details[0].author;
+                    if(val.type == "Newsletter") {
+                        val.show_news ="display:block";
+                        $("#newsletter").show();
+                        $("#templates").hide();
+                        $("#template_request_section").hide();
+                    }
+                    else {
+                        val.show_news ="display:none";
+                        $("#newsletter").hide();
+                        $("#templates").show();
+                        $("#template_request_section").show();
+                    }
+                    if(val.id == first_id) {
+                        // console.log(val.id);
+                        val.image_url=val.photo_url_abs;
+                        sorted_repo.push(val);
+                    }
+                 
+                });
+            }
+            catch(err) {
+                console.log(err);
+                
+                var temp = {};
+                temp.type=post_details[0].author;
+                if(temp.type == "Newsletter") {
+                    temp.show_news ="display:block";
+                    $("#newsletter").show();
+                    $("#templates").hide();
+                    $("#template_request_section").hide();
+                    $("#newsletter aside").hide();
+                    $("#newsletter main").css({"margin":"auto')", "float-size": "none"});
+                }
+                else {
+                    temp.show_news ="display:none";
+                    $("#newsletter").hide();
+                    $("#templates").show();
+                    $("#template_request_section").show();
+                }
+                temp.photo_url_abs = "//codecloud.cdn.speedyrails.net/sites/5aff16916e6f6436bf610100/image/png/1502205053000/Group 25.png";
+                temp.image_url = "//codecloud.cdn.speedyrails.net/sites/5aff16916e6f6436bf610100/image/png/1502205053000/Group 25.png";
+                repo.push(temp);
+            }
+            renderGeneral('#desktop_container','#desktop_template', images);
+            // console.log("sorted images",sorted_images);
+            renderGeneral('#desktop_container_m','#desktop_template_m', sorted_images);
+            renderGeneral('#newsletter_container','#newsletter_template', images);
+            // console.log(repo);
+            // console.log(images);
+            
+            renderGeneral('#mobile_container','#mobile_template', repo);
+            renderGeneral('#mobile_container_m','#mobile_template_m', sorted_repo);
+            renderGeneral('#newsletter_m_container','#newsletter_m_template', repo);
+            
+            var template_type=post_details[0].author;
+            var templates = getBlogDataBySlug("home-templates").posts;
+        
+            var sorted_p_templates = [];
+            $.each(templates, function(key, val) {
+                $.each( val.tag , function( tag_key, tag ) {
+                    //val.taglist = val.taglist + " " + tag;
+                    if(tag == template_type){
+                        sorted_p_templates.push(val);
+                    }
+                    if(tag == "is_new"){
+                        val.is_new ="display:block";
+                    }
+                    else {
+                        val.is_new ="display:none";
+                    }
+                 });
+            });
+            //console.log(sorted_p_templates,template_type,post_details);
+            renderGeneral('#like_container','#like_template', sorted_p_templates);
+            
+            $('.flex-next').html("");
+            
+        }
+        $("#share_link").click(function(e){
+           $("#sharable_link").val(window.location.href);
+           console.log(window.location.href);
+           $('<div class="modal-backdrop custom_backdrop custom_backdrop_copy"></div>').appendTo(document.body); 
+           $("#popup_copy").css({left:(e.pageX) + "px", top:(e.pageY) + "px"});
+           $("#popup_copy").show();
+        });
+        $('.close_popup').click(function(){
+            $(".modal-backdrop").remove();
+	        $("#popup_copy").hide();
+        });
+        $("#copy_share_link").click(function(){
+            
+            var copyTextarea = document.querySelector('#sharable_link');
+              copyTextarea.select();
+            
+            try {
+                var successful = document.execCommand('copy');
+                var msg = successful ? 'successful' : 'unsuccessful';
+                console.log('Copying text command was ' + msg);
+                $(".success_copy_text").addClass(".padding_20");
+                if(msg == 'successful'){
+                    $(".success_copy_text").text("Link Copied to clipboard!");
+                    $("#copy_share_link").remove();
+                }
+                else {
+                    $(".success_copy_text").text("Copying was unsuccessful");
+                }
+            } catch (err) {
+                console.log('Oops, unable to copy');
+                 $(".success_copy_text").text("Copying was unsuccessful");
+            }
+        });
+    
+        $('#template_request_form').submit(function(e) {
+            $('#submit_request').prop('disabled', true);
+            $('#submit_request').css({"background": "#afa39b", "cursor": "not-allowed"});
+            $('#submit_request').removeClass("button--ujarak");
+            e.preventDefault();
+            var post_data = {}
+            post_data.mailto = "sankavy@mobilefringe.com";//+ $("#client_email").val();
+            post_data.subject = "Mall Maverick Template Sales Request";
+            custom = {};
+            custom.name = $("#client_name").val();
+            custom.email = $("#client_email").val();
+            custom.phone = $("#client_phone").val();
+            custom.centre = $("#client_centre").val();
+            custom.template = post_title;
+            custom.template_link = window.location.href;
+            feature_list=[];
+            $.each($('.feature_listing').find("input[type=checkbox]"), function( index, value ) {
+              if(value.checked) {
+                  feature_list.push(value.value);
+              }
+            });
+            if(feature_list !== null && feature_list.length > 0) {
+               custom.feature_list = feature_list.toString();
+            }
+            else {
+                custom.feature_list =  "No additional features were chosen.";
+            }
+
+            post_data.custom = custom;
+            
+            $.post("http://home.mallmaverick.com/custom_email", post_data, function(data, status, xhr){
+                if(status == "success") {
+                    if($("#send_confirm_email").is(':checked') ){
+                        $.getJSON(
+                            "https://mobilefringe.createsend.com/t/d/s/qyupr/?callback=?",
+                            "cm-qyupr-qyupr=" + $("#client_email").val()+
+                            "&cm-name=" + $("#client_name").val() +
+                            "&cm-f-xlutlr="+post_title+
+                            "&cm-f-xlutly="+custom.feature_list+
+                            "&cm-f-xlutrh="+custom.template_link,
+                            function (data) {
+                                console.log("data is",data);
+                                if (data.Status === 400) {
+                                    $('#send_request_error').fadeIn();
+                                } else { // 200
+                                    $('#send_request_success').fadeIn();
+                                }
+                        });
+                    }
+                    else {
+                        $('#send_request_success').fadeIn();
+                    }
+                }
+                else {
+                    $('#send_request_error').fadeIn();
+                }
+                
+                
+            });
+    	});
+    	function change_view_on_resize () {
+    	   // console.log($(document).width());
+    	   prev_width = $(document).width();
+    	    if($(document).width() > 768 && $(document).width() <= 992) {
+    	        $(".feature_listing").hide();
+                $(".feature_listing_2_col").show();
+                $(".default_sitemap ul").css({"margin": "auto 0px"});
+                $(".default_sitemap h3").css({"margin-left": "20px"});
+                $(".send_request").css({"margin":"0 20px"})
+                $(".send_request").show();
+                if($(document).width() >768 && $(document).width() <= 850) {
+                    $(".default_sitemap ul").css({"font-size": "13px"});
+                    $(".default_sitemap h3").css({"font-size": "20px"});
+                }
+                else {
+                    $(".default_sitemap ul").removeAttr( 'style' );
+                    $(".default_sitemap h3").removeAttr( 'style' );
+                    $(".default_sitemap ul").css({"margin": "auto 0px"});
+                    $(".default_sitemap h3").css({"margin-left": "20px"});
+                }
+            }
+            else {
+                $(".feature_listing").show();
+                $(".feature_listing_2_col").hide();
+                $(".default_sitemap ul").removeAttr( 'style' );
+                $(".default_sitemap h3").removeAttr( 'style' );
+                $(".send_request").removeAttr( 'style' );
+            }
+            if($(document).width() <= 768) {
+                $(".feature_listing").hide();
+                $(".feature_listing_2_col").hide();
+                $(".send_request").hide();
+                $(".select_features").css({"cursor":"pointer"});
+                $(".default_sitemap.show_phone").css({"display":"block"});
+            }
+            else {
+                $(".default_sitemap.show_phone").removeAttr( 'style' );
+                $(".select_features").click(false);
+            }
+    	}
+        loadMallDataCached(renderAll); 
+    });
+</script>
