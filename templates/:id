@@ -1,6 +1,6 @@
 <section class="template_dets_banner">
     <div class = "inside_container" id="design_header_container">
-        <script id="design_header_template">
+        <script id="design_header_template" type="x-tmpl-mustache/text">
             <h2 class="text-center inside_main_header col-md-12 col-sm-12 col-xs-12" id="mm_post_title">{{title}}</h2>
             <p class="text-center banner_text  col-md-12 col-sm-12 col-xs-12" id="mm_post_author">{{author}}</p>
         </script>
