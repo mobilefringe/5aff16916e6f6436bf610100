@@ -439,7 +439,20 @@
         border-radius: 30px;
         width: 1250px;
     }
-    
+    .tablet_view .circle {
+        width: 30px;
+        height: 30px;
+        border: 1px solid #e5e5e5;
+        border-radius: 15px;
+        width: 45px;
+        height: 45px;
+        border-radius: 100%;
+        position: absolute;
+        right: 34px;
+        top: 50%;
+        -webkit-transform: translateY(-50%);
+        transform: translateY(-50%);
+    }
     .demo_view {
         -webkit-transform: translateX(-50%);
         transform: translateX(-50%);
