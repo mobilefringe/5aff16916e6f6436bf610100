@@ -43,43 +43,7 @@
             
         </div>
         <div class="row" id="templates">
-            <main class="col-md-8 hidden-sm hidden-xs">
-                <div class="row_title"> <h3> Desktop Pages</h3></div>
-                <div class="monitor_container">
-                    <img src="//codecloud.cdn.speedyrails.net/sites/568d5ba06e6f6402d6000000/image/png/1492091255000/MacScreen.png" class="monitor" alt=""> 
-                    <!--<ul class="flex-direction-nav"><li class="flex-nav-prev"><a class="flex-prev" href="#"></a></li><li class="flex-nav-next"><a class="flex-next" href="#"></a></li></ul>-->
-                    <div class="flexslider_container">
-                        <div class="flexslider flexslider_view desktop_screen">
-                            
-                            <ul class="slides" id="desktop_container">            
-                                <script id="desktop_template" type="x-tmpl-mustache/text">
-                                    <li>
-                                        <img src="{{photo_url_abs}}" alt=""/>
-                                    </li>
-                                </script>                
-                            </ul> 
-                        </div>
-                    </div>
-                <p style="text-align:center; margin-top:210px"> Scroll to explore the page  <i class="fa fa-arrows" aria-hidden="true"></i></p>
-                </div>
-            </main>
-            <aside class="col-md-4 hidden-sm hidden-xs">
-                 <div class="row_title"><h3> Mobile Pages</h3></div>
-                <div class="phone_container">
-                    <img src="//codecloud.cdn.speedyrails.net/sites/568d5ba06e6f6402d6000000/image/png/1492091331000/iphoneScreen.png" class="phone" alt=""> 
-                    <div class="flexslider_container">
-                        <div class="flexslider flexslider_view mobile_screen">
-                            <ul class="slides" id="mobile_container">            
-                                <script id="mobile_template" type="x-tmpl-mustache/text">
-                                    <li>
-                                        <img src="{{photo_url_abs}}" alt=""/>
-                                    </li>
-                                </script>                
-                            </ul>        
-                        </div>
-                    </div>
-                </div>
-            </aside>
+            
             <div class="row  hidden_phone landing_page_btn" style="padding-bottom: 30px;"></div>
         </div>
         <!--<div class="row text-center template_padding_like">-->
