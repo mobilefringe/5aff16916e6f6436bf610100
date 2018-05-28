@@ -464,6 +464,7 @@
         transform: translateY(-50%);
     }
     .demo_view {
+        position: relative;
         -webkit-transform: translateX(-50%);
         transform: translateX(-50%);
         left: 50%;
