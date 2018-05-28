@@ -449,7 +449,7 @@
         border-radius: 30px;
         width: 1250px;
         padding: 40px 0;
-    border-radius: 40px;
+        border-radius: 40px;
     }
     .tablet_view .circle {
         width: 30px;
