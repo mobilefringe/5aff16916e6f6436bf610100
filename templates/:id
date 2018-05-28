@@ -468,9 +468,9 @@
         box-shadow: 0 0 100px rgba(0,0,0,.07);
     }
     .desktop_monitor {
-            height: 857px;
-    width: 1340px;
-    padding-top: 30px;
+        height: 857px;
+        width: 1340px;
+        padding-top: 30px;
     }
 </style>
 <script>
