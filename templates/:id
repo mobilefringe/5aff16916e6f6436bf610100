@@ -476,6 +476,7 @@
     .desktop_monitor {
         /*height: 857px;*/
         /*width: 1340px;*/
+            margin-top: 40px;
         padding-top: 30px;
         position: relative;
         /*position: absolute;*/
