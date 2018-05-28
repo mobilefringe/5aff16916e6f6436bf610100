@@ -515,7 +515,9 @@
     }
     .iframe-container {
     
-        
+        height: 100%;
+    margin: 0 auto;
+    border: 1px solid #eee;
     }
 </style>
 <script>
