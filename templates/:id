@@ -513,6 +513,8 @@
     .demo-device-chrome-monitor .circle:first-child {
         margin-left: 25px;
     }
+    .iframe-container {\
+    
 </style>
 <script>
     var images = [];
