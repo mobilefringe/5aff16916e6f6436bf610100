@@ -506,6 +506,9 @@
         border: 1px solid #e5e5e5;
         border-radius: 3px;
     }
+    .template-preview .demo-device-chrome-monitor .circle:first-child {
+    margin-left: 25px;
+}
 </style>
 <script>
     var images = [];
