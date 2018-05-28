@@ -18,7 +18,7 @@
 </section>
 <section class="template_details">
     <div class="inside_container">
-        <div class="row" id="templates">
+        <div class="row position_relative" id="templates">
             <div class="desktop_monitor">
                 <iframe src="http://umber.codecloudapp.com" frameborder="0" width="100%" height="500px"></iframe>
             </div>
