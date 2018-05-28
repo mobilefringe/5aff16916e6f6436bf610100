@@ -21,7 +21,7 @@
         <div class="row" id="templates">
             <iframe src="http://umber.codecloudapp.com" frameborder="0" width="100%" height="500px"></iframe>
             <!--<iframe frameborder="0" width="100%" height="100%" src="https://bedford-demo.squarespace.com/?nochrome=true"></iframe>-->
-            <div class="row  hidden_phone landing_page_btn" style="padding-bottom: 30px;"></div>
+            <!--<div class="row  hidden_phone landing_page_btn" style="padding-bottom: 30px;"></div>-->
         </div>
         <div class="demo_view">
             <div class="tablet_view">
