@@ -463,7 +463,7 @@
         transform: translateY(-50%);
     }
     .demo_view {
-        padding: 40px 0;
+        padding: 30px 50px;
         border-radius: 30px;
         -webkit-transform: translateX(-50%);
         transform: translateX(-50%);
