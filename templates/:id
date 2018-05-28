@@ -451,8 +451,6 @@
         
     }
     .tablet_view .circle {
-        width: 30px;
-        height: 30px;
         border: 1px solid #e5e5e5;
         border-radius: 15px;
         width: 35px;
