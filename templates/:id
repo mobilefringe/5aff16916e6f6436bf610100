@@ -467,6 +467,9 @@
         -webkit-box-shadow: 0 0 100px rgba(0,0,0,.07);
         box-shadow: 0 0 100px rgba(0,0,0,.07);
     }
+    .desktop_monitor {
+        
+    }
 </style>
 <script>
     var images = [];
