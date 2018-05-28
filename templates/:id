@@ -483,8 +483,8 @@
         transition: opacity 500ms cubic-bezier(.694,0,.335,1);
     }
     .demo-device-chrome-monitor {
-    border-radius: 10px;
-}
+        border-radius: 10px;
+    }
 </style>
 <script>
     var images = [];
