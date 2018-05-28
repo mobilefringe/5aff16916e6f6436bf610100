@@ -474,14 +474,14 @@
         box-shadow: 0 0 100px rgba(0,0,0,.07);
     }
     .desktop_monitor {
-        height: 857px;
-        width: 1340px;
+        /*height: 857px;*/
+        /*width: 1340px;*/
         padding-top: 30px;
-        position: absolute;
-        left: 50%;
-        -webkit-transform: translateX(-50%);
-        transform: translateX(-50%);
-        width: 90%;
+        /*position: absolute;*/
+        /*left: 50%;*/
+        /*-webkit-transform: translateX(-50%);*/
+        /*transform: translateX(-50%);*/
+        /*width: 90%;*/
         opacity: 1;
         -webkit-transition: opacity 500ms cubic-bezier(.694,0,.335,1);
         -o-transition: opacity 500ms cubic-bezier(.694,0,.335,1);
