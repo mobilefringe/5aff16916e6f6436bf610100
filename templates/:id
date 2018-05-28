@@ -482,7 +482,7 @@
         -o-transition: opacity 500ms cubic-bezier(.694,0,.335,1);
         transition: opacity 500ms cubic-bezier(.694,0,.335,1);
     }
-    .template-preview .demo-device-chrome-monitor {
+    .demo-device-chrome-monitor {
     border-radius: 10px;
 }
 </style>
