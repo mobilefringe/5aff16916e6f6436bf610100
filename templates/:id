@@ -464,13 +464,14 @@
         transform: translateY(-50%);
     }
     .demo_view {
-        position: relative;
+        
         -webkit-transform: translateX(-50%);
         transform: translateX(-50%);
         left: 50%;
         background: #fff;
         z-index: -1;
         position: absolute;
+        position: relative;
         top: 0;
         width: 100%;
         height: 100%;
