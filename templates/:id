@@ -459,7 +459,7 @@
         height: 45px;
         border-radius: 100%;
         position: absolute;
-        right: 34px;
+        right: 10px;
         top: 50%;
         -webkit-transform: translateY(-50%);
         transform: translateY(-50%);
