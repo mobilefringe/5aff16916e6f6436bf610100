@@ -18,7 +18,7 @@
 </section>
 <section class="template_details">
     <div class="inside_container">
-        <div class="row" style="position:relative;" id="templates">
+        <div class="row" id="templates">
             <div class="desktop_monitor">
                 <iframe src="http://umber.codecloudapp.com" frameborder="0" width="100%" height="500px"></iframe>
             </div>
@@ -472,13 +472,13 @@
     }
     .desktop_monitor {
         height: 857px;
-        /*width: 1340px;*/
+        width: 1340px;
         padding-top: 30px;
-        /*position: absolute;*/
-        /*left: 50%;*/
-        /*-webkit-transform: translateX(-50%);*/
-        /*transform: translateX(-50%);*/
-        /*width: 90%;*/
+        position: absolute;
+        left: 50%;
+        -webkit-transform: translateX(-50%);
+        transform: translateX(-50%);
+        width: 90%;
         opacity: 1;
         -webkit-transition: opacity 500ms cubic-bezier(.694,0,.335,1);
         -o-transition: opacity 500ms cubic-bezier(.694,0,.335,1);
