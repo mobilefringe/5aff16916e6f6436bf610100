@@ -462,6 +462,9 @@
         -webkit-transform: translateY(-50%);
         transform: translateY(-50%);
     }
+    .mobile_view {
+        
+    }
     .demo_view {
         padding: 30px 50px;
         border-radius: 30px;
