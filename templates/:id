@@ -463,9 +463,9 @@
         transform: translateY(-50%);
     }
     .mobile_view {
-            border-radius: 30px;
-    width: 397px;
-    height: 780px;
+        border-radius: 30px;
+        width: 397px;
+        height: 780px;
     }
     .demo_view {
         padding: 30px 50px;
