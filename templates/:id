@@ -23,9 +23,10 @@
                 <div class="iframe-container">
                     <iframe src="http://umber.codecloudapp.com" frameborder="0" width="100%" height="500px"></iframe>
                 </div>
+                 <div class="demo-device-chrome demo-device-chrome-monitor"><div class="circle demo-device-monitor-circle"></div><div class="circle demo-device-monitor-circle"></div><div class="circle demo-device-monitor-circle"></div></div>
             </div>
             
-            <div class="demo-device-chrome demo-device-chrome-monitor"><div class="circle demo-device-monitor-circle"></div><div class="circle demo-device-monitor-circle"></div><div class="circle demo-device-monitor-circle"></div></div>
+           
             <!--<iframe frameborder="0" width="100%" height="100%" src="https://bedford-demo.squarespace.com/?nochrome=true"></iframe>-->
             <!--<div class="row  hidden_phone landing_page_btn" style="padding-bottom: 30px;"></div>-->
         </div>
