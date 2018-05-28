@@ -477,6 +477,7 @@
         /*height: 857px;*/
         /*width: 1340px;*/
         padding-top: 30px;
+        position: relative;
         /*position: absolute;*/
         /*left: 50%;*/
         /*-webkit-transform: translateX(-50%);*/
