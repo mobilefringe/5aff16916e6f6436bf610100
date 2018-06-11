@@ -17,7 +17,7 @@
     </div>
 </section>
 <section class="toggle_views clearfix">
-    <div class="inside_container">
+    <div class="inside_container is-table-row">
         <div class="col-sm-4">
             <p class="text-uppercase"><i class="fa fa-angle-left"></i> Back To Designs</p>
         </div>
