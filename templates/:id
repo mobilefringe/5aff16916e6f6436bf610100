@@ -16,7 +16,7 @@
         <i class="fa fa-remove close_popup" style="color:#000;"></i>
     </div>
 </section>
-<section>
+<section class="toggle_views">
     
 </section>
 <section class="template_details">
