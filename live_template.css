@@ -10,8 +10,10 @@
 .back_to_designs_top {
     margin-bottom:0;
 }
-.view_icons{
-    height: 52px;
+.view_icons {
+   {
+        height: 52px;
+   }
 }
 .tablet_view {
         border-radius: 30px;
