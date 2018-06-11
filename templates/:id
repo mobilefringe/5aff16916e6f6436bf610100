@@ -16,7 +16,7 @@
         <i class="fa fa-remove close_popup" style="color:#000;"></i>
     </div>
 </section>
-<section class="toggle_views clearfix">
+<section class="toggle_views clearfix is-table-row">
     <div class="inside_container ">
         <div class="col-sm-4">
             <p class="text-uppercase"><i class="fa fa-angle-left"></i> Back To Designs</p>
