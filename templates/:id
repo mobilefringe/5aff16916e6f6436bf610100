@@ -17,6 +17,9 @@
     </div>
 </section>
 <section class="toggle_views clearfix">
+<div class="inside_container">
+    
+</div>
     <div class="col-sm-4">
         <i class="fa fa-angle-left"></i> Back To Designs
     </div>
