@@ -17,7 +17,9 @@
     </div>
 </section>
 <section class="toggle_views">
-    
+    <div class="col-sm-4">
+        
+    </div>
 </section>
 <section class="template_details">
     <div class="inside_container">
