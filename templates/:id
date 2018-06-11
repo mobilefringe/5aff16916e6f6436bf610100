@@ -19,7 +19,7 @@
 <section class="toggle_views clearfix">
     <div class="inside_container">
         <div class="col-sm-4">
-            <p><i class="fa fa-angle-left"></i> Back To Designs</p>
+            <p class="text-uppercase"><i class="fa fa-angle-left"></i> Back To Designs</p>
         </div>
         <div class="col-sm-4">
             <div class="col-sm-4"><img src="//codecloud.cdn.speedyrails.net/sites/5aff16916e6f6436bf610100/image/png/1528748000928/desktop_icon_2x.png" class="" alt=""></div>
