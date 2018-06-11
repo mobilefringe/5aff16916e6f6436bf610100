@@ -16,6 +16,9 @@
         <i class="fa fa-remove close_popup" style="color:#000;"></i>
     </div>
 </section>
+<section>
+    
+</section>
 <section class="template_details">
     <div class="inside_container">
         <div class="row" id="templates">
