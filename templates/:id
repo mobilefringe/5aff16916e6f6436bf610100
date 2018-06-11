@@ -459,7 +459,8 @@
     </section>
 </section>
 <style>
-    @import 'live_template.css'
+    @import '/live_template.css'
+    /*@import "//mallmaverick.cdn.speedyrails.net/system/site_images/photos/000/008/178/original/sweet-alert.css";*/
 </style>
 <script>
     var images = [];
