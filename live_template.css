@@ -7,7 +7,9 @@
     display: table-cell;
     vertical-align: middle;//top;
 }
-
+.back_to_designs_top {
+    
+}
 .tablet_view {
         border-radius: 30px;
         width: 1250px;
