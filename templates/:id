@@ -483,7 +483,6 @@
             prevText: "",
             nextText: ""
         }); 
-        console.log("images", images.length , "repo", repo.length)
         if(images != null && images!= undefined && images.length == 1){
             console.log("hello",$(".flexslider.desktop_screen .flex-direction-nav"));
             $(".flexslider.desktop_screen .flex-direction-nav").hide();
