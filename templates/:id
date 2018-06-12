@@ -501,16 +501,16 @@
             prevText: "",
             nextText: ""
         }); 
-        if(images != null && images!= undefined && images.length == 1){
-            $(".flexslider.desktop_screen .flex-direction-nav").hide();
-        }
-        if(repo != null && repo!= undefined && repo.length == 1){
-            $(".flexslider.mobile_screen .flex-direction-nav").hide();
-        }
-        window.dispatchEvent(new Event('resize'));
-        setTimeout(function() {
-                show_content();
-            }, 500);
+        // if(images != null && images!= undefined && images.length == 1){
+        //     $(".flexslider.desktop_screen .flex-direction-nav").hide();
+        // }
+        // if(repo != null && repo!= undefined && repo.length == 1){
+        //     $(".flexslider.mobile_screen .flex-direction-nav").hide();
+        // }
+        // window.dispatchEvent(new Event('resize'));
+        // setTimeout(function() {
+        //         show_content();
+        //     }, 500);
     });
      
     $(document).ready(function(e) {
