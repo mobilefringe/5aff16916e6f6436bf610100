@@ -561,6 +561,7 @@
     function changeViewType(view_type) {
 	    console.log("view type", view_type);
 	    $(".template_container"),hide();
+	    if(view_type = 'Desktop')
 	    
 	}
 </script>
