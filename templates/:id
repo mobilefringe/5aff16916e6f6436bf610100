@@ -24,7 +24,7 @@
             </div>
             <div class="col-sm-4">
                 <div class="col-md-4 "> 
-                    <div class="view_icons active">
+                    <div class="view_icons active" onClick="changeViewType('Desktop')">
                         <img src="//codecloud.cdn.speedyrails.net/sites/5aff16916e6f6436bf610100/image/png/1528748000928/desktop_icon_2x.png" class="" alt="Desktop Icon">
                         
                     </div>
@@ -38,7 +38,7 @@
                     <p>Mobile</p>
                 </div>
                 <div class="col-md-4">
-                    <div class="view_icons">
+                    <div class="view_icons" onClick="changeViewType('Tablet')">
                         <img src="//codecloud.cdn.speedyrails.net/sites/5aff16916e6f6436bf610100/image/png/1528746157683/tablet_icon_2x.png" class="" alt="Tablet Icon">
                         
                     </div>
