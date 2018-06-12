@@ -568,7 +568,7 @@
 	        $(".template_container").show();
 	    }
 	    else{
-	        $(".template_container")
+	        $(".template_container").show()l
 	    }
 	    
 	}
