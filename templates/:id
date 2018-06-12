@@ -691,39 +691,39 @@
             $('.flex-next').html("");
             
         }
-        $("#share_link").click(function(e){
-           $("#sharable_link").val(window.location.href);
-           console.log(window.location.href);
-           $('<div class="modal-backdrop custom_backdrop custom_backdrop_copy"></div>').appendTo(document.body); 
-           $("#popup_copy").css({left:(e.pageX) + "px", top:(e.pageY) + "px"});
-           $("#popup_copy").show();
-        });
-        $('.close_popup').click(function(){
-            $(".modal-backdrop").remove();
-	        $("#popup_copy").hide();
-        });
-        $("#copy_share_link").click(function(){
+        // $("#share_link").click(function(e){
+        //   $("#sharable_link").val(window.location.href);
+        //   console.log(window.location.href);
+        //   $('<div class="modal-backdrop custom_backdrop custom_backdrop_copy"></div>').appendTo(document.body); 
+        //   $("#popup_copy").css({left:(e.pageX) + "px", top:(e.pageY) + "px"});
+        //   $("#popup_copy").show();
+        // });
+        // $('.close_popup').click(function(){
+        //     $(".modal-backdrop").remove();
+	       // $("#popup_copy").hide();
+        // });
+        // $("#copy_share_link").click(function(){
             
-            var copyTextarea = document.querySelector('#sharable_link');
-              copyTextarea.select();
+        //     var copyTextarea = document.querySelector('#sharable_link');
+        //       copyTextarea.select();
             
-            try {
-                var successful = document.execCommand('copy');
-                var msg = successful ? 'successful' : 'unsuccessful';
-                console.log('Copying text command was ' + msg);
-                $(".success_copy_text").addClass(".padding_20");
-                if(msg == 'successful'){
-                    $(".success_copy_text").text("Link Copied to clipboard!");
-                    $("#copy_share_link").remove();
-                }
-                else {
-                    $(".success_copy_text").text("Copying was unsuccessful");
-                }
-            } catch (err) {
-                console.log('Oops, unable to copy');
-                 $(".success_copy_text").text("Copying was unsuccessful");
-            }
-        });
+        //     try {
+        //         var successful = document.execCommand('copy');
+        //         var msg = successful ? 'successful' : 'unsuccessful';
+        //         console.log('Copying text command was ' + msg);
+        //         $(".success_copy_text").addClass(".padding_20");
+        //         if(msg == 'successful'){
+        //             $(".success_copy_text").text("Link Copied to clipboard!");
+        //             $("#copy_share_link").remove();
+        //         }
+        //         else {
+        //             $(".success_copy_text").text("Copying was unsuccessful");
+        //         }
+        //     } catch (err) {
+        //         console.log('Oops, unable to copy');
+        //          $(".success_copy_text").text("Copying was unsuccessful");
+        //     }
+        // });
     
         $('#template_request_form').submit(function(e) {
             $('#submit_request').prop('disabled', true);
