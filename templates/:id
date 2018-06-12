@@ -481,215 +481,215 @@
 </style>
 <script>
     // var images = [];
-    var sorted_images=[];
-    // var repo = [];
-    var sorted_repo=[];
-    $(window).load(function(){
-        $('.flexslider_like').flexslider({
-            animation: "slide",
-            animationLoop: false,
-            itemWidth: 210,
-            itemMargin: 5,
-            minItems: 1,
-            maxItems: 3
-        });
-        $('.flexslider_view').flexslider({
-            animation: "slide",
-            pauseOnHover: true,
-            slideshow: false,
-            smoothHeight: true,
-            prevText: "",
-            nextText: ""
-        }); 
-        // if(images != null && images!= undefined && images.length == 1){
-        //     $(".flexslider.desktop_screen .flex-direction-nav").hide();
-        // }
-        // if(repo != null && repo!= undefined && repo.length == 1){
-        //     $(".flexslider.mobile_screen .flex-direction-nav").hide();
-        // }
-        // window.dispatchEvent(new Event('resize'));
-        // setTimeout(function() {
-        //         show_content();
-        //     }, 500);
-    });
+    // var sorted_images=[];
+    // // var repo = [];
+    // var sorted_repo=[];
+    // $(window).load(function(){
+    //     $('.flexslider_like').flexslider({
+    //         animation: "slide",
+    //         animationLoop: false,
+    //         itemWidth: 210,
+    //         itemMargin: 5,
+    //         minItems: 1,
+    //         maxItems: 3
+    //     });
+    //     $('.flexslider_view').flexslider({
+    //         animation: "slide",
+    //         pauseOnHover: true,
+    //         slideshow: false,
+    //         smoothHeight: true,
+    //         prevText: "",
+    //         nextText: ""
+    //     }); 
+    //     // if(images != null && images!= undefined && images.length == 1){
+    //     //     $(".flexslider.desktop_screen .flex-direction-nav").hide();
+    //     // }
+    //     // if(repo != null && repo!= undefined && repo.length == 1){
+    //     //     $(".flexslider.mobile_screen .flex-direction-nav").hide();
+    //     // }
+    //     // window.dispatchEvent(new Event('resize'));
+    //     // setTimeout(function() {
+    //     //         show_content();
+    //     //     }, 500);
+    // });
      
-    $(document).ready(function(e) {
-        init(e);
-        templateInit();
-        var prev_width = 0;
-        // $(window).on('resize', function(){
-        //     if(prev_width !== $(document).width() ) {
-        //         change_view_on_resize();
-        //     }
+    // $(document).ready(function(e) {
+    //     init(e);
+    //     templateInit();
+    //     var prev_width = 0;
+    //     // $(window).on('resize', function(){
+    //     //     if(prev_width !== $(document).width() ) {
+    //     //         change_view_on_resize();
+    //     //     }
             
-        // });
-        // change_view_on_resize();
+    //     // });
+    //     // change_view_on_resize();
         
-        $("#select_features").click(function () {
-            $(".feature_listing.toggle_class").toggle();
-            $(".send_request").toggle();
-            console.log("toggleD!");
-        });
+    //     $("#select_features").click(function () {
+    //         $(".feature_listing.toggle_class").toggle();
+    //         $(".send_request").toggle();
+    //         console.log("toggleD!");
+    //     });
         
-        var post_title = "";
-        function renderAll(){
-            var pathArray = window.location.pathname.split( '/' );
-            var slug = pathArray[pathArray.length-1];
-            var post_details = getPublishedPostDetailsBySlug(slug);
-            renderGeneral('#design_header_container','#design_header_template', post_details);
-            renderGeneral('#design_body_container','#design_body_template', post_details);
-            var author_initial = post_details[0].author ;
-            post_details[0].author = post_details[0].author.toLowerCase().replace(/ /g,"_");;
-            //console.log(post_details[0].author);
-            renderGeneral('#backTO_body_container','#backTO_body_template', post_details);
-            post_details[0].author = author_initial ;
-            post_title = post_details[0].title;
-            var gallery_slug = "home-" + slug;
-            // console.log(slug);
-            // console.log(post_details);
+    //     var post_title = "";
+    //     function renderAll(){
+    //         var pathArray = window.location.pathname.split( '/' );
+    //         var slug = pathArray[pathArray.length-1];
+    //         var post_details = getPublishedPostDetailsBySlug(slug);
+    //         renderGeneral('#design_header_container','#design_header_template', post_details);
+    //         renderGeneral('#design_body_container','#design_body_template', post_details);
+    //         var author_initial = post_details[0].author ;
+    //         post_details[0].author = post_details[0].author.toLowerCase().replace(/ /g,"_");;
+    //         //console.log(post_details[0].author);
+    //         renderGeneral('#backTO_body_container','#backTO_body_template', post_details);
+    //         post_details[0].author = author_initial ;
+    //         post_title = post_details[0].title;
+    //         var gallery_slug = "home-" + slug;
+    //         // console.log(slug);
+    //         // console.log(post_details);
             
-            try {
-                images = getFashionBySlug(gallery_slug).fashion_images;
+    //         try {
+    //             images = getFashionBySlug(gallery_slug).fashion_images;
                 
-                //find the first image for client mobile view
-                var first_id = Math.min.apply(null, images.map(function(a){return a.id;}));
-                // console.log(first_id);
-                $.each( images , function( key, val ) {
-                    val.type=post_details[0].author;
-                    if(val.type == "Newsletter") {
-                        val.show_news ="display:block";
+    //             //find the first image for client mobile view
+    //             var first_id = Math.min.apply(null, images.map(function(a){return a.id;}));
+    //             // console.log(first_id);
+    //             $.each( images , function( key, val ) {
+    //                 val.type=post_details[0].author;
+    //                 if(val.type == "Newsletter") {
+    //                     val.show_news ="display:block";
                         
-                        $("#template_request_section").hide();
-                    }
-                    else {
-                        val.show_news ="display:none";
-                    }
-                    if(val.type == "Landing Page"){
-                        $(".hidden_phone.landing_page_btn").html('<div class="col-md-8 align_center"> <a target="_blank" href="//projects.invisionapp.com/share/YQE6CRT34#/screens/260767304_Black_Friday_Landing_Page"><img src="//codecloud.cdn.speedyrails.net/sites/5aff16916e6f6436bf610100/image/png/1509138805000/desktopview.png" class="" alt=""></a></div><div class="col-md-4 align_center"> <a target="_blank" href="//projects.invisionapp.com/share/GDE6H6A7P#/screens/260770433_Black_Friday_Mobile_Landing_Page"><img src="//codecloud.cdn.speedyrails.net/sites/5aff16916e6f6436bf610100/image/png/1509138807000/mobileview.png" class="" alt=""></a></div>');
-                         $(".show_phone.landing_page_btn1").html('<div class="col-sm-12 col-xs-12 align_center" style="margin-top: 30px;"> <a target="_blank" href="//projects.invisionapp.com/share/YQE6CRT34#/screens/260767304_Black_Friday_Landing_Page"><img src="//codecloud.cdn.speedyrails.net/sites/5aff16916e6f6436bf610100/image/png/1509138805000/desktopview.png" class="" alt=""></a></div>');
-                         $(".show_phone.landing_page_btn2").html('<div class="col-sm-12 col-xs-12 align_center"> <a target="_blank" href="//projects.invisionapp.com/share/GDE6H6A7P#/screens/260770433_Black_Friday_Mobile_Landing_Page"><img src="//codecloud.cdn.speedyrails.net/sites/5aff16916e6f6436bf610100/image/png/1509138807000/mobileview.png" class="" alt=""></a></div>');
-                    }
-                    // console.log(val.photo_url);
+    //                     $("#template_request_section").hide();
+    //                 }
+    //                 else {
+    //                     val.show_news ="display:none";
+    //                 }
+    //                 if(val.type == "Landing Page"){
+    //                     $(".hidden_phone.landing_page_btn").html('<div class="col-md-8 align_center"> <a target="_blank" href="//projects.invisionapp.com/share/YQE6CRT34#/screens/260767304_Black_Friday_Landing_Page"><img src="//codecloud.cdn.speedyrails.net/sites/5aff16916e6f6436bf610100/image/png/1509138805000/desktopview.png" class="" alt=""></a></div><div class="col-md-4 align_center"> <a target="_blank" href="//projects.invisionapp.com/share/GDE6H6A7P#/screens/260770433_Black_Friday_Mobile_Landing_Page"><img src="//codecloud.cdn.speedyrails.net/sites/5aff16916e6f6436bf610100/image/png/1509138807000/mobileview.png" class="" alt=""></a></div>');
+    //                      $(".show_phone.landing_page_btn1").html('<div class="col-sm-12 col-xs-12 align_center" style="margin-top: 30px;"> <a target="_blank" href="//projects.invisionapp.com/share/YQE6CRT34#/screens/260767304_Black_Friday_Landing_Page"><img src="//codecloud.cdn.speedyrails.net/sites/5aff16916e6f6436bf610100/image/png/1509138805000/desktopview.png" class="" alt=""></a></div>');
+    //                      $(".show_phone.landing_page_btn2").html('<div class="col-sm-12 col-xs-12 align_center"> <a target="_blank" href="//projects.invisionapp.com/share/GDE6H6A7P#/screens/260770433_Black_Friday_Mobile_Landing_Page"><img src="//codecloud.cdn.speedyrails.net/sites/5aff16916e6f6436bf610100/image/png/1509138807000/mobileview.png" class="" alt=""></a></div>');
+    //                 }
+    //                 // console.log(val.photo_url);
                     
                     
-                    if(val.id == first_id) {
-                        // console.log(val.id);
-                        val.image_url="https://www.mallmaverick.com" + val.photo_url;
-                        sorted_images.push(val);
-                    }
-                    val.photo_url_abs="https://www.mallmaverick.com" + val.photo_url;
-                });
+    //                 if(val.id == first_id) {
+    //                     // console.log(val.id);
+    //                     val.image_url="https://www.mallmaverick.com" + val.photo_url;
+    //                     sorted_images.push(val);
+    //                 }
+    //                 val.photo_url_abs="https://www.mallmaverick.com" + val.photo_url;
+    //             });
                 
-            }
-            catch(err) {
-                console.log(err);
-                var temp = {};
-                temp.type=post_details[0].author;
-                if(temp.type == "Newsletter") {
-                    temp.show_news ="display:block";
-                    $("#newsletter").show();
-                    $("#templates").hide();
-                    $("#template_request_section").hide();
-                    $("#newsletter main").hide();
-                    $("#newsletter aside").css({"margin":"auto')", "float-size": "none"});
-                }
-                else {
-                    temp.show_news ="display:none";
-                    $("#newsletter").hide();
-                    $("#templates").show();
-                    $("#template_request_section").show();
-                }
-                temp.photo_url = "//codecloud.cdn.speedyrails.net/sites/5aff16916e6f6436bf610100/image/png/1502205049000/Group 24.png";
-                temp.image_url = "//codecloud.cdn.speedyrails.net/sites/5aff16916e6f6436bf610100/image/png/1502205049000/Group 24.png";
-                images.push(temp);
+    //         }
+    //         catch(err) {
+    //             console.log(err);
+    //             var temp = {};
+    //             temp.type=post_details[0].author;
+    //             if(temp.type == "Newsletter") {
+    //                 temp.show_news ="display:block";
+    //                 $("#newsletter").show();
+    //                 $("#templates").hide();
+    //                 $("#template_request_section").hide();
+    //                 $("#newsletter main").hide();
+    //                 $("#newsletter aside").css({"margin":"auto')", "float-size": "none"});
+    //             }
+    //             else {
+    //                 temp.show_news ="display:none";
+    //                 $("#newsletter").hide();
+    //                 $("#templates").show();
+    //                 $("#template_request_section").show();
+    //             }
+    //             temp.photo_url = "//codecloud.cdn.speedyrails.net/sites/5aff16916e6f6436bf610100/image/png/1502205049000/Group 24.png";
+    //             temp.image_url = "//codecloud.cdn.speedyrails.net/sites/5aff16916e6f6436bf610100/image/png/1502205049000/Group 24.png";
+    //             images.push(temp);
                 
-            }
-            repo = getRepoDetailsByName(slug);
-            if(repo !== null && repo !== undefined) {
+    //         }
+    //         repo = getRepoDetailsByName(slug);
+    //         if(repo !== null && repo !== undefined) {
                 
-                repo = repo.images;
+    //             repo = repo.images;
                 
-                //find the first image for client mobile view
-                var first_id = Math.min.apply(null, repo.map(function(a){return a.id;}));
-                // console.log(first_id);
-                $.each( repo , function( key, val ) {
-                    val.type=post_details[0].author;
-                    if(val.type == "Newsletter") {
-                        val.show_news ="display:block";
-                        $("#newsletter").show();
-                        $("#templates").hide();
-                        $("#template_request_section").hide();
-                    }
-                    else {
-                        val.show_news ="display:none";
-                        $("#newsletter").hide();
-                        $("#templates").show();
-                        $("#template_request_section").show();
-                    }
-                    if(val.id == first_id) {
-                        // console.log(val.id);
-                        val.image_url=val.photo_url_abs;
-                        sorted_repo.push(val);
-                    }
+    //             //find the first image for client mobile view
+    //             var first_id = Math.min.apply(null, repo.map(function(a){return a.id;}));
+    //             // console.log(first_id);
+    //             $.each( repo , function( key, val ) {
+    //                 val.type=post_details[0].author;
+    //                 if(val.type == "Newsletter") {
+    //                     val.show_news ="display:block";
+    //                     $("#newsletter").show();
+    //                     $("#templates").hide();
+    //                     $("#template_request_section").hide();
+    //                 }
+    //                 else {
+    //                     val.show_news ="display:none";
+    //                     $("#newsletter").hide();
+    //                     $("#templates").show();
+    //                     $("#template_request_section").show();
+    //                 }
+    //                 if(val.id == first_id) {
+    //                     // console.log(val.id);
+    //                     val.image_url=val.photo_url_abs;
+    //                     sorted_repo.push(val);
+    //                 }
                  
-                });
-            }
-            else {
-                var temp = {};
-                temp.type=post_details[0].author;
-                if(temp.type == "Newsletter") {
-                    temp.show_news ="display:block";
-                    $("#newsletter").show();
-                    $("#templates").hide();
-                    $("#template_request_section").hide();
-                    $("#newsletter aside").hide();
-                    $("#newsletter main").css({"margin":"auto')", "float-size": "none"});
-                }
-                else {
-                    temp.show_news ="display:none";
-                    $("#newsletter").hide();
-                    $("#templates").show();
-                    $("#template_request_section").show();
-                }
-                temp.photo_url_abs = "//codecloud.cdn.speedyrails.net/sites/5aff16916e6f6436bf610100/image/png/1502205053000/Group 25.png";
-                temp.image_url = "//codecloud.cdn.speedyrails.net/sites/5aff16916e6f6436bf610100/image/png/1502205053000/Group 25.png";
-                repo.push(temp);
-            }
-            renderGeneral('#desktop_container','#desktop_template', images);
-            // console.log("sorted images",sorted_images);
-            renderGeneral('#desktop_container_m','#desktop_template_m', sorted_images);
-            renderGeneral('#newsletter_container','#newsletter_template', images);
-            // console.log(repo);
-            // console.log(images);
+    //             });
+    //         }
+    //         else {
+    //             var temp = {};
+    //             temp.type=post_details[0].author;
+    //             if(temp.type == "Newsletter") {
+    //                 temp.show_news ="display:block";
+    //                 $("#newsletter").show();
+    //                 $("#templates").hide();
+    //                 $("#template_request_section").hide();
+    //                 $("#newsletter aside").hide();
+    //                 $("#newsletter main").css({"margin":"auto')", "float-size": "none"});
+    //             }
+    //             else {
+    //                 temp.show_news ="display:none";
+    //                 $("#newsletter").hide();
+    //                 $("#templates").show();
+    //                 $("#template_request_section").show();
+    //             }
+    //             temp.photo_url_abs = "//codecloud.cdn.speedyrails.net/sites/5aff16916e6f6436bf610100/image/png/1502205053000/Group 25.png";
+    //             temp.image_url = "//codecloud.cdn.speedyrails.net/sites/5aff16916e6f6436bf610100/image/png/1502205053000/Group 25.png";
+    //             repo.push(temp);
+    //         }
+    //         renderGeneral('#desktop_container','#desktop_template', images);
+    //         // console.log("sorted images",sorted_images);
+    //         renderGeneral('#desktop_container_m','#desktop_template_m', sorted_images);
+    //         renderGeneral('#newsletter_container','#newsletter_template', images);
+    //         // console.log(repo);
+    //         // console.log(images);
             
-            renderGeneral('#mobile_container','#mobile_template', repo);
-            renderGeneral('#mobile_container_m','#mobile_template_m', sorted_repo);
-            renderGeneral('#newsletter_m_container','#newsletter_m_template', repo);
+    //         renderGeneral('#mobile_container','#mobile_template', repo);
+    //         renderGeneral('#mobile_container_m','#mobile_template_m', sorted_repo);
+    //         renderGeneral('#newsletter_m_container','#newsletter_m_template', repo);
             
-            var template_type=post_details[0].author;
-            var templates = getBlogDataBySlug("home-templates").posts;
+    //         var template_type=post_details[0].author;
+    //         var templates = getBlogDataBySlug("home-templates").posts;
         
-            var sorted_p_templates = [];
-            $.each(templates, function(key, val) {
-                $.each( val.tag , function( tag_key, tag ) {
-                    //val.taglist = val.taglist + " " + tag;
-                    if(tag == template_type){
-                        sorted_p_templates.push(val);
-                    }
-                    if(tag == "is_new"){
-                        val.is_new ="display:block";
-                    }
-                    else {
-                        val.is_new ="display:none";
-                    }
-                 });
-            });
-            //console.log(sorted_p_templates,template_type,post_details);
-            renderGeneral('#like_container','#like_template', sorted_p_templates);
+    //         var sorted_p_templates = [];
+    //         $.each(templates, function(key, val) {
+    //             $.each( val.tag , function( tag_key, tag ) {
+    //                 //val.taglist = val.taglist + " " + tag;
+    //                 if(tag == template_type){
+    //                     sorted_p_templates.push(val);
+    //                 }
+    //                 if(tag == "is_new"){
+    //                     val.is_new ="display:block";
+    //                 }
+    //                 else {
+    //                     val.is_new ="display:none";
+    //                 }
+    //              });
+    //         });
+    //         //console.log(sorted_p_templates,template_type,post_details);
+    //         renderGeneral('#like_container','#like_template', sorted_p_templates);
             
-            $('.flex-next').html("");
+    //         $('.flex-next').html("");
             
-        }
+    //     }
         // $("#share_link").click(function(e){
         //   $("#sharable_link").val(window.location.href);
         //   console.log(window.location.href);
