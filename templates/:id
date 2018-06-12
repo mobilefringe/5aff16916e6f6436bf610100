@@ -562,7 +562,7 @@
 	    console.log("view type", view_type);
 	    $(".template_container").hide();
 	    if(view_type = 'Desktop'){
-	        $(".template_container").show();
+	        $(".template_container.desktop_monitor").show();
 	    }
 	    else if(view_type = 'Tablet'){
 	        $(".template_container.mobile_monitor").show();
