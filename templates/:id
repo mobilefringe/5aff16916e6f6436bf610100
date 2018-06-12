@@ -564,7 +564,7 @@
 	    $(".view_icons").removeClass('active');
 	    if(view_type = 'Desktop'){
 	        $(".template_container.desktop_monitor").show();
-	        $(".view_icons").addClass('active');
+	        $(".view_icons.desktop_icon").addClass('active');
 	    }
 	    else if(view_type = 'Tablet'){
 	        $(".template_container.tablet_monitor").show();
