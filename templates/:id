@@ -565,7 +565,7 @@
 	        $(".template_container").show();
 	    }
 	    else if(view_type = 'Tablet'){
-	        $(".template_container").show();
+	        $(".template_container.mobile_monitor").show();
 	    }
 	    else{
 	        $(".template_container").show();
