@@ -607,7 +607,7 @@
             repo = getRepoDetailsByName(slug);
             if(repo !== null && repo !== undefined) {
                 
-                .images;
+                repo = repo.images;
                 
                 //find the first image for client mobile view
                 var first_id = Math.min.apply(null, repo.map(function(a){return a.id;}));
