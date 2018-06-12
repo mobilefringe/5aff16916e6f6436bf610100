@@ -561,6 +561,7 @@
     function changeViewType(view_type) {
 	    console.log("view type", view_type);
 	    $(".template_container").hide();
+	    $(".view_icons").removeClass('active');
 	    if(view_type = 'Desktop'){
 	        $(".template_container.desktop_monitor").show();
 	    }
