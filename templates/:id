@@ -571,7 +571,7 @@
 	        $(".view_icons.tablet_icon").addClass('active');
 	    }
 	    else{
-	        $(".template_container.mobile_monitor").show();
+	        $(".template_container.mobile_container").show();
 	        $(".view_icons.mobile_icon").addClass('active');
 	    }
 	    
