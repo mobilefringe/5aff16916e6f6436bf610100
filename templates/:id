@@ -824,6 +824,6 @@
     //             $(".select_features").click(false);
     //         }
     // 	}
-        loadMallDataCached(renderAll); 
+        // loadMallDataCached(renderAll); 
     });
 </script>
