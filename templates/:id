@@ -634,7 +634,7 @@
                  
                 });
             }
-            catch(err) {
+            else {
                 console.log(err);
                 
                 var temp = {};
