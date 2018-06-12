@@ -547,7 +547,7 @@
             });
     	});
     	function (view_type) {
-    	    
+    	    console.log("view", view_type);
     	}
     });
 </script>
