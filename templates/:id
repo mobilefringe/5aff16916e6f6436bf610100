@@ -635,8 +635,6 @@
                 });
             }
             else {
-                console.log(err);
-                
                 var temp = {};
                 temp.type=post_details[0].author;
                 if(temp.type == "Newsletter") {
