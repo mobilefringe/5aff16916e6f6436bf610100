@@ -568,11 +568,11 @@
 	    }
 	    else if(view_type = 'Tablet'){
 	        $(".template_container.tablet_monitor").show();
-	        $(".view_icons").addClass('active');
+	        $(".view_icons.desktop_icon").addClass('active');
 	    }
 	    else{
 	        $(".template_container.mobile_monitor").show();
-	        $(".view_icons").addClass('active');
+	        $(".view_icons.mobile_icon").addClass('active');
 	    }
 	    
 	}
