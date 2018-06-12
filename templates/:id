@@ -546,7 +546,7 @@
                 
             });
     	});
-    	function () {
+    	function (view_type) {
     	    
     	}
     });
