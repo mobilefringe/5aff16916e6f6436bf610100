@@ -483,7 +483,7 @@
     // var images = [];
     // var sorted_images=[];
     // var repo = [];
-    // var sorted_repo=[];
+    var sorted_repo=[];
     $(window).load(function(){
         $('.flexslider_like').flexslider({
             animation: "slide",
