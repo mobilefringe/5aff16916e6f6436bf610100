@@ -546,7 +546,7 @@
                 
             });
     	});
-    	function (view_type) {
+    	function changeViewType(view_type) {
     	    console.log("view", view_type);
     	}
     });
