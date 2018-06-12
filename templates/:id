@@ -56,7 +56,7 @@
     <div class="inside_container">
         <div class="row" id="templates">
             
-            <div class="template_container desktop_monitor" >
+            <div class="template_container desktop_container" >
                 <div class="iframe-container">
                     <iframe src="//umber.codecloudapp.com" frameborder="0" width="100%" height="100%"></iframe>
                 </div>
