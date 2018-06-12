@@ -513,7 +513,7 @@
     //     //     }, 500);
     // });
      
-    // $(document).ready(function(e) {
+    $(document).ready(function(e) {
     //     init(e);
     //     templateInit();
     //     var prev_width = 0;
