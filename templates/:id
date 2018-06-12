@@ -604,9 +604,10 @@
                 images.push(temp);
                 
             }
-            try {
+            repo = getRepoDetailsByName(slug);
+            if(repo !== null && repo !== undefined) {
                 
-                repo = getRepoDetailsByName(slug).images;
+                .images;
                 
                 //find the first image for client mobile view
                 var first_id = Math.min.apply(null, repo.map(function(a){return a.id;}));
