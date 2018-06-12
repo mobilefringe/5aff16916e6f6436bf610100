@@ -570,7 +570,7 @@
 	    else if(view_type == 'Tablet'){
 	        $(".template_container.tablet_container").show();
 	        $(".view_icons.tablet_icon").addClass('active');
-	        console.log("destop")
+	        console.log("tablet")
 	    }
 	    else{
 	        $(".template_container.mobile_container").show();
