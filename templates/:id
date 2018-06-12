@@ -564,6 +564,11 @@
 	    if(view_type = 'Desktop'){
 	        
 	    }
+	    else if(view_type = 'Tablet'){
+	    }
+	    else{
+	        
+	    }
 	    
 	}
 </script>
