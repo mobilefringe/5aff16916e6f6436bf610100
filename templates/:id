@@ -483,38 +483,6 @@
     /*@import "//mallmaverick.cdn.speedyrails.net/system/site_images/photos/000/008/178/original/sweet-alert.css";*/
 </style>
 <script>
-    // var images = [];
-    // var sorted_images=[];
-    // // var repo = [];
-    // var sorted_repo=[];
-    // $(window).load(function(){
-    //     $('.flexslider_like').flexslider({
-    //         animation: "slide",
-    //         animationLoop: false,
-    //         itemWidth: 210,
-    //         itemMargin: 5,
-    //         minItems: 1,
-    //         maxItems: 3
-    //     });
-    //     $('.flexslider_view').flexslider({
-    //         animation: "slide",
-    //         pauseOnHover: true,
-    //         slideshow: false,
-    //         smoothHeight: true,
-    //         prevText: "",
-    //         nextText: ""
-    //     }); 
-    //     // if(images != null && images!= undefined && images.length == 1){
-    //     //     $(".flexslider.desktop_screen .flex-direction-nav").hide();
-    //     // }
-    //     // if(repo != null && repo!= undefined && repo.length == 1){
-    //     //     $(".flexslider.mobile_screen .flex-direction-nav").hide();
-    //     // }
-    //     // window.dispatchEvent(new Event('resize'));
-    //     // setTimeout(function() {
-    //     //         show_content();
-    //     //     }, 500);
-    // });
      
     $(document).ready(function(e) {
     
