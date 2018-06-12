@@ -785,46 +785,46 @@
                 
             });
     	});
-    	function change_view_on_resize () {
-    	   // console.log($(document).width());
-    	   prev_width = $(document).width();
-    	    if($(document).width() > 768 && $(document).width() <= 992) {
-    	        $(".feature_listing").hide();
-                $(".feature_listing_2_col").show();
-                $(".default_sitemap ul").css({"margin": "auto 0px"});
-                $(".default_sitemap h3").css({"margin-left": "20px"});
-                $(".send_request").css({"margin":"0 20px"})
-                $(".send_request").show();
-                if($(document).width() >768 && $(document).width() <= 850) {
-                    $(".default_sitemap ul").css({"font-size": "13px"});
-                    $(".default_sitemap h3").css({"font-size": "20px"});
-                }
-                else {
-                    $(".default_sitemap ul").removeAttr( 'style' );
-                    $(".default_sitemap h3").removeAttr( 'style' );
-                    $(".default_sitemap ul").css({"margin": "auto 0px"});
-                    $(".default_sitemap h3").css({"margin-left": "20px"});
-                }
-            }
-            else {
-                $(".feature_listing").show();
-                $(".feature_listing_2_col").hide();
-                $(".default_sitemap ul").removeAttr( 'style' );
-                $(".default_sitemap h3").removeAttr( 'style' );
-                $(".send_request").removeAttr( 'style' );
-            }
-            if($(document).width() <= 768) {
-                $(".feature_listing").hide();
-                $(".feature_listing_2_col").hide();
-                $(".send_request").hide();
-                $(".select_features").css({"cursor":"pointer"});
-                $(".default_sitemap.show_phone").css({"display":"block"});
-            }
-            else {
-                $(".default_sitemap.show_phone").removeAttr( 'style' );
-                $(".select_features").click(false);
-            }
-    	}
+    // 	function change_view_on_resize () {
+    // 	   // console.log($(document).width());
+    // 	   prev_width = $(document).width();
+    // 	    if($(document).width() > 768 && $(document).width() <= 992) {
+    // 	        $(".feature_listing").hide();
+    //             $(".feature_listing_2_col").show();
+    //             $(".default_sitemap ul").css({"margin": "auto 0px"});
+    //             $(".default_sitemap h3").css({"margin-left": "20px"});
+    //             $(".send_request").css({"margin":"0 20px"})
+    //             $(".send_request").show();
+    //             if($(document).width() >768 && $(document).width() <= 850) {
+    //                 $(".default_sitemap ul").css({"font-size": "13px"});
+    //                 $(".default_sitemap h3").css({"font-size": "20px"});
+    //             }
+    //             else {
+    //                 $(".default_sitemap ul").removeAttr( 'style' );
+    //                 $(".default_sitemap h3").removeAttr( 'style' );
+    //                 $(".default_sitemap ul").css({"margin": "auto 0px"});
+    //                 $(".default_sitemap h3").css({"margin-left": "20px"});
+    //             }
+    //         }
+    //         else {
+    //             $(".feature_listing").show();
+    //             $(".feature_listing_2_col").hide();
+    //             $(".default_sitemap ul").removeAttr( 'style' );
+    //             $(".default_sitemap h3").removeAttr( 'style' );
+    //             $(".send_request").removeAttr( 'style' );
+    //         }
+    //         if($(document).width() <= 768) {
+    //             $(".feature_listing").hide();
+    //             $(".feature_listing_2_col").hide();
+    //             $(".send_request").hide();
+    //             $(".select_features").css({"cursor":"pointer"});
+    //             $(".default_sitemap.show_phone").css({"display":"block"});
+    //         }
+    //         else {
+    //             $(".default_sitemap.show_phone").removeAttr( 'style' );
+    //             $(".select_features").click(false);
+    //         }
+    // 	}
         loadMallDataCached(renderAll); 
     });
 </script>
