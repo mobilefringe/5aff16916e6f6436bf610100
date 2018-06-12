@@ -517,13 +517,13 @@
         init(e);
         templateInit();
         var prev_width = 0;
-        $(window).on('resize', function(){
-            if(prev_width !== $(document).width() ) {
-                change_view_on_resize();
-            }
+        // $(window).on('resize', function(){
+        //     if(prev_width !== $(document).width() ) {
+        //         change_view_on_resize();
+        //     }
             
-        });
-        change_view_on_resize();
+        // });
+        // change_view_on_resize();
         
         $("#select_features").click(function () {
             $(".feature_listing.toggle_class").toggle();
