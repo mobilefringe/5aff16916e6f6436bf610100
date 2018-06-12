@@ -562,11 +562,11 @@
 	    console.log("view type", view_type);
 	    $(".template_container").hide();
 	    $(".view_icons").removeClass('active');
-	    if(view_type = 'Desktop'){
+	    if(view_type == 'Desktop'){
 	        $(".template_container.desktop_monitor").show();
 	        $(".view_icons.desktop_icon").addClass('active');
 	    }
-	    else if(view_type = 'Tablet'){
+	    else if(view_type == 'Tablet'){
 	        $(".template_container.tablet_monitor").show();
 	        $(".view_icons.tablet_icon").addClass('active');
 	    }
