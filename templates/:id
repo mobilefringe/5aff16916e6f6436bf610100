@@ -61,7 +61,7 @@
                     <iframe src="//umber.codecloudapp.com" frameborder="0" width="100%" height="100%"></iframe>
                 </div>
             </div>
-            <div class="mobile_monitor hidden_now" >
+            <div class="template_container mobile_monitor hidden_now" >
                 <div class="iframe-container">
                     <iframe src="//umber.codecloudapp.com" frameborder="0" width="100%" height="100%"></iframe>
                 </div>
