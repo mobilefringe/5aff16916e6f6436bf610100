@@ -565,10 +565,10 @@
 	        $(".template_container.desktop_monitor").show();
 	    }
 	    else if(view_type = 'Tablet'){
-	        $(".template_container.mobile_monitor").show();
+	        $(".template_container.tablet_monitor").show();
 	    }
 	    else{
-	        $(".template_container").show();
+	        $(".template_container.mobile_monitor").show();
 	    }
 	    
 	}
