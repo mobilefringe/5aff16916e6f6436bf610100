@@ -20,7 +20,7 @@
     <div class="inside_container ">
         <div class="row is-table-row">
             <div class="col-sm-4 col-xs-12 is-table-col">
-                <p class="text-uppercase back_to_designs_top"><i class="fa fa-angle-left"></i> Back To Designs</p>
+                <p class="text-uppercase back_to_designs_top hvr-icon-back"><i class="fa fa-angle-left"></i> Back To Designs</p>
             </div>
             <div class="col-sm-4 col-xs-12 is-table-col">
                 <div class="col-sm-4 "> 
