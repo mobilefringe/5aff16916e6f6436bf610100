@@ -45,7 +45,7 @@
                     <p>Tablet</p>
                 </div>
             </div>
-            <div class="col-sm-4 is-table-col">
+            <div class="col-sm-4 col-xs-12 is-table-col">
                 
             </div>
         </div>
