@@ -22,7 +22,7 @@
             <div class="col-sm-4 is-table-col">
                 <p class="text-uppercase back_to_designs_top"><i class="fa fa-angle-left"></i> Back To Designs</p>
             </div>
-            <div class="col-sm-4">
+            <div class="col-sm-4 is-table-col">
                 <div class="col-md-4 "> 
                     <div class="view_icons desktop_icon active" onClick="changeViewType('Desktop')">
                         <img src="//codecloud.cdn.speedyrails.net/sites/5aff16916e6f6436bf610100/image/png/1528748000928/desktop_icon_2x.png" class="" alt="Desktop Icon">
@@ -45,7 +45,7 @@
                     <p>Tablet</p>
                 </div>
             </div>
-            <div class="col-sm-4">
+            <div class="col-sm-4 is-table-col">
                 
             </div>
         </div>
