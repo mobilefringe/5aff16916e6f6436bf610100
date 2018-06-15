@@ -19,7 +19,7 @@
 <section class="toggle_views clearfix">
     <div class="inside_container ">
         <div class="row is-table-row">
-            <div class="col-sm-4">
+            <div class="col-sm-4 is-table-col">
                 <p class="text-uppercase back_to_designs_top"><i class="fa fa-angle-left"></i> Back To Designs</p>
             </div>
             <div class="col-sm-4">
