@@ -58,17 +58,17 @@
             
             <div class="template_container desktop_container" >
                 <div class="iframe-container">
-                    <iframe src="//umber.codecloudapp.com" frameborder="0" width="100%" height="100%"></iframe>
+                    <iframe src="//umber.netlify.com" frameborder="0" width="100%" height="100%"></iframe>
                 </div>
             </div>
             <div class="template_container mobile_container hidden_now" >
                 <div class="iframe-container">
-                    <iframe src="//umber.codecloudapp.com" frameborder="0" width="100%" height="100%"></iframe>
+                    <iframe src="//umber.netlify.com" frameborder="0" width="100%" height="100%"></iframe>
                 </div>
             </div>
             <div class="template_container tablet_container hidden_now" >
                 <div class="iframe-container">
-                    <iframe src="//umber.codecloudapp.com" frameborder="0" width="100%" height="100%"></iframe>
+                    <iframe src="//umber.netlify.com" frameborder="0" width="100%" height="100%"></iframe>
                 </div>
             </div>
             <!--<div class="demo_view">-->
@@ -495,7 +495,13 @@
 <script>
      
     $(document).ready(function(e) {
-    
+        window.addEventListener('message', function(event) {
+          if(event.data && event.data.event == 'height-update'){
+          	var iframe_height = event.data.document_height;
+            document.getElementById("iframe-container").height = iframe_height;
+        	console.log("iframe_height", iframe_height);
+          }
+        })
         $('#template_request_form').submit(function(e) {
             $('#submit_request').prop('disabled', true);
             $('#submit_request').css({"background": "#afa39b", "cursor": "not-allowed"});
